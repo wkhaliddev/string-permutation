@@ -4,11 +4,11 @@
 using namespace std;
 
 string sort(string s) {
-	int length = s.length();
+	int length = s.length();//Function to get string length.
 	for (int i = 0; i < length; i++) {
-		for (int j = 0; j < length - 1; j++) {
+		for (int j = 0; j < length - 1; j++) { //Nested for loop
 			if (s[j] > s[j + 1]) {
-				swap(s[j], s[j + 1]);
+				swap(s[j], s[j + 1]);//Function the swaps the values inside two variables.
 			}
 		}
 
